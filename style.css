@@ -1,0 +1,246 @@
+/* #4 #sweat #external css file */
+
+/* GLOBAL */
+
+/* #4 #global styles*/
+
+* {
+    /* #4 use #roboto #font */
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+     /* #4 #sweat take care of #spacing between various elements */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* #4 # sweat #uppercase buttons and w3w locations */
+button, strong {
+    text-transform: uppercase;
+}
+
+
+
+/* APP BAR */
+#channels {
+position:absolute;
+width:40%;
+left: 0px;
+}
+
+#chat {
+    position:absolute;
+    width:60%;
+    right: 0px;
+    }
+
+#chat img {
+    position: relative;
+    right: -140px;
+}
+
+small{
+    padding: 5px;
+}
+/* #4 #sweat address both #app-bar s */
+h1 {
+    background-color: #3F51B5;
+    color: white;
+    font-size: 20px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+} 
+
+img {
+    position: relative;
+    margin: 15px;
+}
+
+/* CHANNELS LIST */
+
+/* #4 #sweat #channels */
+ul {
+    /* #3 #channels #list modifies h2 to ul */
+    background-color: white;
+    /* #3 #channels #bullets removed */
+    list-style-type: none;
+}
+
+li {
+    /* #4 #channel #tile geometry */
+    box-sizing: border-box;
+    height: 48px;
+    padding: 16px;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+    /* #4 #channel tiles are separated by #lines */
+    border-bottom: 1px solid #F5F5F5;
+}
+
+/* #4 active #channel is #highlighted */
+li.selected {
+    color: #3F51B5;
+    border-left: 4px solid #3F51B5;
+}
+
+ #span-aa {
+margin: 0px 180px 0px 10px;
+position: relative;
+
+ }
+
+ #span-a {
+    margin: 0px 115px 0px 10px;
+    position: relative;
+    color: #3F51B5;  
+    
+     }
+
+
+     #span-b {
+        margin: 0px 170px 0px 10px;
+        position: relative;
+        
+         }
+
+         #span-c {
+            margin: 0px 95px 0px 10px;
+            position: relative;
+            
+             }
+
+             #span-d {
+                margin: 0px 150px 0px 10px;
+                position: relative;
+                
+                 }
+/* TAB BAR */
+
+/* #4 #sweat #tab-bar */
+#tab-bar {
+    /* #3 #tab-bar #container should be white */
+    background-color: white;
+    position:fixed;
+    bottom: 0px;
+    width: 40%;
+    /* #3 #tab-bar #container has all buttons centered */
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#emojis-button {
+    /* #3 #tab-bar #container should be white */
+    position:fixed;
+    bottom: 0px;
+    left: 400px;
+    /* #3 #tab-bar #container has all buttons centered */
+}
+
+#chat-bar{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 90px;
+    left:400px;
+    font-size: 28px;
+    text-align: left;
+    overflow: hidden;
+    padding: 16px;
+    
+}
+
+/* #4 add styles to #tab-bar #buttons */
+#tab-bar button {
+    background-color: white;
+    border: none;
+    font-size: 13px;
+
+    /* #4 #tab-bar buttons have a width of #one-third of the available space */
+    width: 33%;
+    height: 72px;
+    padding: 16px;
+}
+
+/* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
+#tab-bar button img {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
+/* #4 the selected #tab-bar #button is #highlighted */
+#tab-bar button.selected {
+    color: #3F51B5;
+    border-bottom: 4px solid #3F51B5;
+}
+
+
+/* MESSAGES */
+/* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
+.message {
+    /* #3 #chat #width*/
+    width: 80%;
+
+    /* #4 align all #messages using #margins */
+    margin-left: 2.5%;
+
+    /* #4 #message distance to next message container*/
+    margin-bottom: 8px;
+font-size: smaller
+
+}
+
+
+.message h3 {
+    font-size: small;
+display: flex;
+justify-content: space-between;
+align-items:flex-end;
+
+}
+
+.message h3 em {
+    font-size: medium;
+    font-style: normal;
+}
+
+.message h3 a {
+    /* #3 #chat #link color is primary text */
+    color: black;
+}
+
+.message p {
+    background-color: white;
+    padding: 16px;
+    position: relative;
+    
+
+}
+
+.message p button {
+    background-color: #CDDC39;
+    color: black;
+    text-transform: uppercase;
+    position: absolute;
+    bottom:8px;
+    right:8px;
+    
+}
+
+/* #4 left align own #messages using #margins */
+.message.own {
+    margin-left: 17.5%;
+}
+
